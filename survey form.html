@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Registration Form</title> 
+	  <link rel="stylesheet" type="text/css" href="suverystyles.css" />
+    <h1  class="text-center" id="title">Sifu's Survey Form</h1>
+  </head>
+  <body>
+    <p  class="description" id="description">Helping to enhance skills of web</p>
+
+    <form  class="survey-form" id="survey-form">
+      
+   
+      <label  id="name-label">
+        State your name 
+          <input  class="name-label" id="name" 
+          required placeholder="Name">
+      </label>
+      <br>
+      <label id="email-label">
+        
+        State your email
+   <input   class="email-label"  id="email" required placeholder="E-mail" type="email">
+      </label>
+      <br>
+      <label id="number-label"> 
+        Age (optional)
+      <input  class="number-label"id="number"  type="number" placeholder="Number" min="13" max="100">
+      </label>
+      <br>
+     <h1 class="which">Which option best describes your current role?</h1>
+      <select class="dropdown" id="dropdown">
+        <option disabled>Select current role
+        <option>Student
+        <option>Full Time job
+           <option>Fulltime learner
+              <option>Prefer not to say
+                 <option>Other
+      </select>
+      <br>
+      <h1 class="reccomend" >Would you recommend sifu's courses  to a friend?
+        </h1>
+      <br>
+          <input type="radio"  name ="good-bad" value="good-bad">Definitely
+          
+          <input type="radio"  name ="good-bad" value="good-bad">Maybe
+           <input type="radio"  name ="good-bad" value="good-bad">Not sure
+           <br>
+           <br>
+<h1 class="improvement">What would you like to see improved? (Check all that apply) </h1>
+<br>
+          <input  class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Front-end Projects
+          <input class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Back-end Projects
+
+          <input class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Data Visualization
+          <input class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Challenges
+          <input class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Open Source Community
+          <input  class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Gitter help rooms
+          <input class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Wiki
+          <input class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">City Meetups
+          <input type="checkbox"  name ="checkbox"  class="input-checkbox" value="checkbox">Forum
+          
+          <input class="input-checkbox" type="checkbox"  name ="checkbox" value="checkbox">Additional Courses
+          <br>
+          Any comments or suggestions?
+          <br>
+        <textarea class="input-textarea" placeholder="Enter your comment here" required></textarea>
+        <input type="submit" class="submit-button" id="submit">
+    </form>
+  </body>
